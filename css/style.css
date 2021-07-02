@@ -11,6 +11,9 @@ html {
   margin: 0;
   padding: 0;
 }
+ul, li {
+  list-style-type: none;
+}
 
 a {
   text-decoration: none;
@@ -107,6 +110,7 @@ body {
   padding: 16px 19px 15px;
   transition: all ease 1s;
   border: 1px solid transparent;
+  display: inline-block;
 }
 .application-btn:hover {
   color:#C5AC2D;
@@ -410,4 +414,89 @@ body {
 .reviews__slider button {
   margin: 0 5px;
   line-height: 12px;
+}
+
+ /* feedback */
+
+.feedback {
+  padding: 100px 0;
+}
+.feedback__inner {
+  display: flex;
+  align-items: center;
+}
+.feedback__images {
+  width: 50%;
+}
+
+.feedback__form {
+  width: 415px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* align-items: center; */
+}
+.feedback__title {
+  font-size: 24px;
+  line-height: 29px;
+  font-family: 'Fira Sans', sans-serif;
+}
+.feedback__text {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 30px;
+}
+.feedbach__input {
+  border: none;
+  display: block;
+  padding: 20px 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(99, 23, 23, 0.25);
+  outline: none;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.45);
+}
+.feedbach__input::placeholder {
+  font-size: 16px;
+  color: #1b1818;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.feedback__btn {
+  width: 50%;
+  margin-top: 50px;
+}
+
+/* footer */
+
+.footer {
+  padding: 100px 0 24px;
+  background: #332208;
+  color: #fefefe;
+}
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 21px;
+}
+.footer__social-link {
+  min-width: 200px;
+}
+
+.foorter__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__social-item {
+  margin-right: 30px;
+}
+.footer__social-item:last-child {
+  margin-right: 0;
+}
+
+@media screen {
+  
 }
