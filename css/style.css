@@ -18,6 +18,10 @@ ul, li {
 a {
   text-decoration: none;
 }
+/* img {
+  width: 100%;
+  height: auto;
+} */
 
 /*
 font-family: 'Fira Sans', sans-serif;
@@ -48,6 +52,9 @@ body {
 }
 .menu__list {
   display: flex;
+}
+.menu__btn {
+  display: none;
 }
 .menu__item {
   margin-right: 15px;
@@ -497,6 +504,250 @@ body {
   margin-right: 0;
 }
 
-@media screen {
-  
+
+@media (max-width: 1240px) {
+  .top__content {
+    width: 40%;
+  }
+  .top__slider {
+    width: 60%;
+  } 
+  .top__heading {
+    display: block;
+    padding-top: 0;
+  }
+  .top__content {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .top__slider {
+    width: 100%;    
+  }
+  .top__slider-item {
+    margin-bottom: 30px;
+  }
+  .top__slider-images {
+    margin-left: 25%;
+  }
+  .top__slider-text {
+    display: flex;
+    justify-content: center;
+  }
+
+  .benefits {
+    padding: 0 15px;
+  }
+
+  .benefits__images {
+    width: 50%;
+    height: auto;
+  }
 }
+
+@media (max-width: 1100px) {
+  .top__bottom {
+    flex-direction: column;
+  }
+  .top__items {
+    width: 100%;
+  }
+  .top__links {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .rent {
+    padding: 0;
+  }
+  .rent__inner {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 0 15px;
+  }
+  .rent__content {
+    width: 100%;
+    padding: 0 5%;
+  }
+
+  .benefits {
+    padding: 60px 15px 30px 15px;
+  }
+  .benefits__title {
+    text-align: center;
+  }
+
+  .benefits__images {
+    width: 40%;
+    height: auto;
+  }
+
+  .benefits__list-item:nth-child(1), .benefits__list-item:nth-child(7) {
+    margin-right: 0px;
+  }
+  .benefits__list-item:nth-child(2), .benefits__list-item:nth-child(6) {
+    margin-right: 0px;
+  }
+  .benefits__list-item:nth-child(3), .benefits__list-item:nth-child(5) {
+    margin-right: 0px;
+  }
+  .benefits__list-item:nth-child(4) {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 960px) {
+  .reviews {
+    padding: 30px 0;
+  }
+  .feedback {
+    padding: 30px 0;
+  }
+  .feedback__images {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__inner {
+    padding: 0 15px;
+  }
+  .menu {
+    order: 1;
+    padding-right: 30px;
+  }
+  .menu__list {
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background-color: #332208;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-500px);
+    transition: all ease .5s;
+    opacity: 0;    
+  }
+  .menu__list.menu__list--active {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  .menu__item {
+    padding: 20px 0;
+    margin-right: 0;
+    text-align: center;
+  }
+  .menu__btn {
+    display: block;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    transition: all ease .5s;
+  }
+  .menu__btn > span:nth-child(1) {
+    background-color: #fff;
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    top: -8px;
+    left: 0;
+    transition: all ease .5s;
+  }
+  .menu__btn > span:nth-child(2) {
+    background-color: #fff;
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    top: 0px;
+    left: 0;
+    transition: all ease .5s;
+  }
+  .menu__btn > span:nth-child(3) {
+    background-color: #fff;
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    top: 8px;
+    left: 0;
+    transition: all ease .5s;
+  }
+  .menu__btn.active > span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 0;
+    width: 30px;
+  }
+  .menu__btn.active > span:nth-child(2) {
+    display: none;
+  }
+  .menu__btn.active > span:nth-child(3) {
+    transform: rotate(-45deg);
+    width: 30px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  .top__slider-images {
+    margin-left: 0%;
+    width: 100%;
+    height: auto;
+  }
+
+  .benefits__items {
+    flex-direction: column;
+  }
+
+  .benefits__list {
+    /* width: 0; */
+  }
+
+}
+
+@media (max-width: 560px) {
+  .top__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 500px;
+    padding: 0 10%;
+  }
+  .top__item {
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 20px;
+    justify-content: space-around;
+  }
+  .top__links {
+    padding-right: 0;
+  }
+
+  .top__slider-text {
+    padding-right: 0;
+  }
+
+  .rent__content {
+    width: 100%;
+    padding: 0 10%;
+    margin-bottom: 15px;
+  }
+  .rent__item {
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  .reviews {
+    padding: 30px 0;
+  }
+
+  .reviews__item {
+    margin-right: 0;
+  }
+
+  .footer {
+    padding: 30px 0 24px;
+  }
+  .footer__top {
+    flex-direction: column;
+  }  
+}
+
